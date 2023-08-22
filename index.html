@@ -10,24 +10,29 @@
 
 <body>
     <header>
-        <img src="./assets/logo.svg" alt="logo">
-        <nav class="mt-1 mx-auto">
-            <a href="">Inicio</a>
-            <a href="">Cursos</a>
-            <a href="">Eventos</a>
-            <a href="">Contato</a>
-        </nav>
-        <a href="" class="btn mt-1 mx-auto">Se Inscreva</a>
+        <div class="container">
+            <img src="./assets/logo.svg" alt="logo">
+            <nav>
+                <a href="">Inicio</a>
+                <a href="">Cursos</a>
+                <a href="">Eventos</a>
+                <a href="">Contato</a>
+            </nav>
+            <a href="" class="btn mt-1 mx-auto">Se Inscreva</a>
+        </div>
     </header>
+    
     <main>
         <section class="hero-section">
+           <div class="container row-reverse">
             <img src="./assets/hero-img.svg" alt="banda tocando">
-            <div>
-                <h1 class="mt-2">Crie Algo <span class="text-primary decoration">Impactante</span> com música</h1>
-                <p class="mt-2 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa aperiam ratione
-                    fugit?</p>
-                <a href="" class="btn">Comece Agora</a>
-            </div>
+                <div>
+                    <h1 class="mt-2">Crie Algo <span class="text-primary decoration">Impactante</span> com música</h1>
+                    <p class="mt-2 mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa aperiam ratione
+                        fugit?</p>
+                    <a href="" class="btn">Comece Agora</a>
+                </div>
+            </div>     
         </section>
         <section class="courses-section">
             <div class="cards">
@@ -65,25 +70,29 @@
                 </article class="card">
             </div>
 
-            <h2>E <span class="text-primary">vários</span> outros</h2>
-            <a href="" class="btn">Conhecer os Cursos</a>
+            <h2 class="text-center">E <span class="text-primary">vários</span> outros</h2>
+            <a href="#" class="btn mt-2 mx-auto">Conhecer Cursos</a>
         </section>
     </main>
     <footer>
-        <div>
-            <img src="./assets/logo.svg" alt="logo">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit Adipisicing elit.</p>
+        <div class="container">
+            <div class="about-column">
+                <img src="./assets/logo.svg" alt="logo" class="mb-1 mt-1">
+                <p class="mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit Adipisicing elit. Lorem ipsum dolor sit, amet consectetur</p>
+            </div>
+            <nav class="mb-2">
+                <a href="">Inicio</a>
+                <a href="">Cursos</a>
+                <a href="">Eventos</a>
+                <a href="">Contato</a>
+            </nav>
+        
+            <form class="newsletter-form">
+                <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
+                <input type="text" name="email" id="email" placeholder="Digite seu e-mail" class="mb-1">
+                <button class="btn mb-2">Quero Receber</button>
+            </form>
         </div>
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Cursos</a>
-            <a href="">Eventos</a>
-            <a href="">Contato</a>
-        </nav>
-        <form>
-            <label for="email">Receba materiais gratuitos no seu email</label>
-            <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
-        </form>
     </footer>
 </body>
 
